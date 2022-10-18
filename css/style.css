@@ -3,5 +3,54 @@ body {
 }
 
 .hero_img {
-  width: 40vh;
+  width: 40vw;
+}
+
+@media (min-width: 1920px) {
+  .hero_img {
+    width: 25vw;
+  }
+}
+
+.our_people_img {
+  width: 40vw;
+}
+@media (min-width: 1920px) {
+  .our_people_img {
+    width: 70%;
+  }
+}
+
+.bounce_service_card {
+  transition-duration: 600ms;
+}
+.bounce_service_card:hover {
+  transform: translateY(-20px);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-550%);
+  }
+}
+
+.move_partners {
+  animation: move 30s linear infinite;
+}
+
+@media (min-width: 720px) {
+  @keyframes move {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  .move_partners {
+    animation: move 15s linear infinite;
+  }
 }
