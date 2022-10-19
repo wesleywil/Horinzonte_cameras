@@ -24,9 +24,6 @@ body {
 .bounce_service_card {
   transition-duration: 600ms;
 }
-.bounce_service_card:hover {
-  transform: translateY(-20px);
-}
 
 @keyframes move {
   0% {
@@ -34,6 +31,12 @@ body {
   }
   100% {
     transform: translateX(-550%);
+  }
+}
+
+@media (min-width: 720px) {
+  .bounce_service_card:hover {
+    transform: translateY(-20px);
   }
 }
 
@@ -52,5 +55,40 @@ body {
   }
   .move_partners {
     animation: move 15s linear infinite;
+  }
+}
+
+.zoom_gallery_img {
+  transition-duration: 600ms;
+}
+.zoom_gallery_img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 720px) {
+  @keyframes move_testimonials {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  .move_testimonials {
+    animation: move_testimonials 20s linear infinite;
+  }
+}
+
+@media (min-width: 1920px) {
+  @keyframes move_testimonials {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  .move_testimonials {
+    animation: move_testimonials 40s linear infinite;
   }
 }
