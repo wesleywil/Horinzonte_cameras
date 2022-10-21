@@ -2,6 +2,67 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+:root {
+  --green_color: #539a76;
+  --yellow_color: #d8b65c;
+  --dark_color: #0a191e;
+}
+
+.text_green {
+  color: var(--green_color);
+}
+
+.text_yellow {
+  color: var(--yellow_color);
+}
+
+.text_dark {
+  color: var(--dark_color);
+}
+
+.bg_green {
+  background-color: var(--green_color);
+}
+
+.bg_yellow {
+  background-color: var(--yellow_color);
+}
+
+.bg_dark {
+  background-color: var(--dark_color);
+}
+
+.bg_dark_half {
+  background-color: #0a191eee;
+}
+
+.bd_green {
+  border-bottom: 1px solid var(--green_color);
+}
+
+.main_img {
+  background-image: url(../imgs/bg-masthead.jpg);
+  background-attachment: fixed;
+  background-size: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@media (max-width: 420px) {
+  .main_img {
+    background-image: url(../imgs/bg-masthead.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+  }
+}
+
+.bg_background_main {
+  background-color: #0a191ec2;
+}
+
 .hero_img {
   width: 40vw;
 }
@@ -91,4 +152,29 @@ body {
   .move_testimonials {
     animation: move_testimonials 40s linear infinite;
   }
+}
+
+.contact_imgs {
+  width: 120px;
+  height: 120px;
+}
+
+@keyframes ww {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.ww_animation {
+  transition-duration: 600ms;
+}
+
+.ww_animation:hover {
+  animation: ww 5s linear infinite;
 }
