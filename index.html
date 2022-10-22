@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="imgs/IHC.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Horizonte Câmeras</title>
   </head>
   <body>
@@ -19,30 +21,34 @@
     <div class="bg_dark shadow">
       <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-4">
-          <div>
+          <div class="flex gap-2">
             <img src="imgs/ihc.png" alt="horizonte cameras logo" class="w-16" />
+            <span
+              class="text_yellow font-bold text-xl md:text-3xl xl:text-3xl tracking-tighter self-center nav_text_show"
+              >Horizonte Câmeras</span
+            >
           </div>
 
           <div class="hidden sm:flex sm:items-center">
             <a
-              href="#"
+              href="#servicos"
               class="text_yellow hover:opacity-80 text-sm font-semibold mr-4"
-              >Products</a
+              >Serviços</a
             >
             <a
-              href="#"
+              href="#galeria"
               class="text_yellow hover:opacity-80 text-sm font-semibold mr-4"
-              >Marketplace</a
+              >Galeria</a
             >
             <a
-              href="#"
+              href="#depoimentos"
               class="text_yellow hover:opacity-80 text-sm font-semibold mr-4"
-              >Partners</a
+              >Depoimentos</a
             >
             <a
-              href="#"
+              href="#contato"
               class="text_yellow hover:opacity-80 text-sm font-semibold"
-              >Pricing</a
+              >Contato</a
             >
           </div>
 
@@ -63,24 +69,24 @@
         <div class="block sm:hidden bg_dark border-t-2 py-2">
           <div class="flex flex-col">
             <a
-              href="#"
+              href="#servicos"
               class="text_yellow hover:opacity-80 text-sm font-semibold mb-1"
-              >Products</a
+              >Serviços</a
             >
             <a
-              href="#"
+              href="#galeria"
               class="text_yellow hover:opacity-80 text-sm font-semibold mb-1"
-              >Marketplace</a
+              >Galeria</a
             >
             <a
-              href="#"
+              href="#depoimentos"
               class="text_yellow hover:opacity-80 text-sm font-semibold mb-1"
-              >Partners</a
+              >Depoimentos</a
             >
             <a
-              href="#"
+              href="#contato"
               class="text_yellow hover:opacity-80 text-sm font-semibold mb-1"
-              >Pricing</a
+              >Contato</a
             >
           </div>
         </div>
@@ -154,6 +160,7 @@
     <!-- End Our People Area -->
     <div class="w-full p-4 bg_dark_half">
       <h2
+        id="servicos"
         class="text-white text-xl xl:text-4xl md:text-3xl font-bold xl:ml-96 mb-8"
       >
         Nossos Serviços
@@ -165,7 +172,11 @@
         <div
           class="bounce_service_card rounded-xl overflow-hidden drop-shadow-lg w-full xl:w-96 md:w-72 flex-none mx-2"
         >
-          <img src="https://dummyimage.com/300x300" alt="" class="w-full" />
+          <img
+            src="imgs/our_services/camera2.jpg"
+            alt="camera de segurança"
+            class="w-full"
+          />
           <div class="bg_dark h-full">
             <h3 class="p-2 text-center text-2xl font-semibold text_yellow">
               Câmeras de segurança
@@ -180,7 +191,11 @@
         <div
           class="bounce_service_card rounded-xl overflow-hidden drop-shadow-lg w-full xl:w-96 md:w-72 flex-none mx-2"
         >
-          <img src="https://dummyimage.com/300x300" alt="" class="w-full" />
+          <img
+            src="imgs/our_services/alarm_wall.jpg"
+            alt="alarmes"
+            class="w-full"
+          />
           <div class="bg_dark h-full">
             <h3 class="p-2 text-center text-2xl font-semibold text_yellow">
               Alarmes
@@ -195,7 +210,11 @@
         <div
           class="bounce_service_card rounded-xl overflow-hidden drop-shadow-lg w-full xl:w-96 md:w-72 flex-none mx-2"
         >
-          <img src="https://dummyimage.com/300x300" alt="" class="w-full" />
+          <img
+            src="imgs/our_services/porteiro_eletronico_2.JPG"
+            alt="posteiros eletronico"
+            class="w-full"
+          />
           <div class="bg_dark h-full">
             <h3 class="p-2 text-center text-2xl font-semibold text_yellow">
               Porteiro Eletrônico
@@ -209,155 +228,75 @@
       </div>
     </div>
     <!-- End Services Area -->
-    <div class="w-full overflow-hidden bg_dark py-2">
-      <div class="flex gap-4 flex-row move_partners">
-        <img
-          src="https://dummyimage.com/250x80"
-          alt=""
-          class="flex-none mx-2"
-        />
-        <img
-          src="https://dummyimage.com/250x80"
-          alt=""
-          class="flex-none mx-2"
-        />
-        <img
-          src="https://dummyimage.com/250x80"
-          alt=""
-          class="flex-none mx-2"
-        />
-        <img
-          src="https://dummyimage.com/250x80"
-          alt=""
-          class="flex-none mx-2"
-        />
-        <img
-          src="https://dummyimage.com/250x80"
-          alt=""
-          class="flex-none mx-2"
-        />
-        <img
-          src="https://dummyimage.com/250x80"
-          alt=""
-          class="flex-none mx-2"
-        />
-        <img
-          src="https://dummyimage.com/250x80"
-          alt=""
-          class="flex-none mx-2"
-        />
+    <div class="w-full bg_dark">
+      <div class="w-full xl:w-1/2 md:w-1/2 mx-auto overflow-hidden py-2">
+        <div class="flex gap-4 flex-row move_partners">
+          <img
+            src="imgs/partners/Hikvision_logo_smaller.PNG"
+            alt=""
+            class="flex-none m-2 zoom_gallery_img"
+          />
+          <img
+            src="imgs/partners/Intelbras_logo_smaller.PNG"
+            alt=""
+            class="flex-none mx-2 zoom_gallery_img"
+          />
+          <img
+            src="imgs/partners/Tecvoz_logo_smaller.PNG"
+            alt=""
+            class="flex-none mx-2 zoom_gallery_img"
+          />
+          <img
+            src="imgs/partners/Ubiquiti_logo_smaller.png"
+            alt=""
+            class="flex-none m-2 zoom_gallery_img"
+          />
+        </div>
       </div>
     </div>
     <!-- End Partners Area -->
-    <div class="p-4 bg_dark_half">
+    <div class="p-4 bg_dark_half border-b">
       <h2
+        id="galeria"
         class="text-white text-xl xl:text-4xl md:text-3xl font-bold text-center mb-8"
       >
         Galeria
       </h2>
-      <div
-        class="flex flex-row md:flex-wrap gap-2 justify-start xl:justify-center md:justify-start overflow-x-auto xl:overflow-x-visible md:overflow-x-visible"
-      >
-        <div
-          class="rounded-xl overflow-hidden drop-shadow-lg w-full xl:w-96 md:w-72 flex-none"
-        >
+      <div class="slideshow-container p-2 rounded-xl overflow-hidden bd_green">
+        <div class="mySlides1 fade rounded-xl overflow-hidden">
+          <img src="https://dummyimage.com/300x300" style="width: 100%" />
+        </div>
+
+        <div class="mySlides1 fade rounded-xl overflow-hidden">
+          <img src="https://dummyimage.com/300x300" style="width: 100%" />
+        </div>
+
+        <div class="mySlides1 fade rounded-xl overflow-hidden">
           <img
-            src="https://dummyimage.com/300x300"
-            alt=""
-            class="w-full zoom_gallery_img"
+            src="https://dummyimage.com/300x300/000/fff"
+            style="width: 100%"
           />
         </div>
 
-        <div
-          class="rounded-xl overflow-hidden drop-shadow-lg w-full xl:w-96 md:w-72 flex-none"
-        >
-          <img
-            src="https://dummyimage.com/300x300"
-            alt=""
-            class="w-full zoom_gallery_img"
-          />
-        </div>
-
-        <div
-          class="rounded-xl overflow-hidden drop-shadow-lg w-full xl:w-96 md:w-72 flex-none"
-        >
-          <img
-            src="https://dummyimage.com/300x300"
-            alt=""
-            class="w-full zoom_gallery_img"
-          />
-        </div>
-        <div
-          class="rounded-xl overflow-hidden drop-shadow-lg w-full xl:w-96 md:w-72 flex-none"
-        >
-          <img
-            src="https://dummyimage.com/300x300"
-            alt=""
-            class="w-full zoom_gallery_img"
-          />
-        </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
       </div>
     </div>
+
     <!-- End Gallery Area-->
     <div class="p-4 text-white border-b bg_dark_half">
-      <h2 class="text-xl xl:text-4xl md:text-3xl font-bold text-center mb-8">
+      <h2
+        id="depoimentos"
+        class="text-xl xl:text-4xl md:text-3xl font-bold text-center mb-8"
+      >
         Depoimentos
       </h2>
+
       <div
-        class="flex flex-row gap-2 justify-start xl:justify-center md:justify-center overflow-x-auto xl:overflow-x-hidden md:overflow-x-hidden"
+        class="slideshow-container-testimonials p-2 rounded-xl overflow-hidden bd_green"
       >
-        <div
-          class="flex flex-row gap-2 justify-start xl:justify-center md:justify-start move_testimonials"
-        >
-          <div
-            class="flex-none rounded-xl drop-shadow-lg w-full xl:w-2/3 md:w-2/3 border mx-2"
-          >
-            <p class="p-2 text-base md:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              consectetur, odio at tincidunt tempor, nisl augue pellentesque
-              nunc, non venenatis nibh nibh id tellus. Nulla scelerisque metus
-              ac facilisis facilisis. Duis a eleifend nulla. Duis blandit ornare
-              eros vel faucibus.
-            </p>
-            <div class="flex flex-row gap-2 items-center p-2">
-              <img
-                src="https://dummyimage.com/70x70"
-                alt=""
-                class="rounded-full"
-              />
-              <div class="flex flex-col">
-                <h3 class="font-semibold">Wesley Wilson</h3>
-                <h4 class="text-xs text-gray-300">CEO WWTECH</h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex-none rounded-xl drop-shadow-lg w-full xl:w-2/3 md:w-2/3 border mx-2"
-          >
-            <p class="p-2 text-base md:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              consectetur, odio at tincidunt tempor, nisl augue pellentesque
-              nunc, non venenatis nibh nibh id tellus. Nulla scelerisque metus
-              ac facilisis facilisis. Duis a eleifend nulla. Duis blandit ornare
-              eros vel faucibus.
-            </p>
-            <div class="flex flex-row gap-2 items-center p-2">
-              <img
-                src="https://dummyimage.com/70x70"
-                alt=""
-                class="rounded-full"
-              />
-              <div class="flex flex-col">
-                <h3 class="font-semibold">Wesley Wilson</h3>
-                <h4 class="text-xs text-gray-300">CEO WWTECH</h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex-none rounded-xl drop-shadow-lg w-full xl:w-2/3 md:w-2/3 border mx-2"
-          >
+        <div class="mySlides2 fade rounded-xl overflow-hidden pl-10">
+          <div class="flex-none rounded-xl drop-shadow-lg w-full">
             <p class="p-2 text-base md:text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               consectetur, odio at tincidunt tempor, nisl augue pellentesque
@@ -378,66 +317,124 @@
             </div>
           </div>
         </div>
+
+        <div class="mySlides2 fade rounded-xl overflow-hidden pl-10">
+          <div class="flex-none rounded-xl drop-shadow-lg w-full">
+            <p class="p-2 text-base md:text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              consectetur, odio at tincidunt tempor, nisl augue pellentesque
+              nunc, non venenatis nibh nibh id tellus. Nulla scelerisque metus
+              ac facilisis facilisis. Duis a eleifend nulla. Duis blandit ornare
+              eros vel faucibus.
+            </p>
+            <div class="flex flex-row gap-2 items-center p-2">
+              <img
+                src="https://dummyimage.com/70x70"
+                alt=""
+                class="rounded-full"
+              />
+              <div class="flex flex-col">
+                <h3 class="font-semibold">Wesley Wilson</h3>
+                <h4 class="text-xs text-gray-300">CEO WWTECH</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides2 fade rounded-xl overflow-hidden pl-10">
+          <div class="flex-none rounded-xl drop-shadow-lg w-full">
+            <p class="p-2 text-base md:text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              consectetur, odio at tincidunt tempor, nisl augue pellentesque
+              nunc, non venenatis nibh nibh id tellus. Nulla scelerisque metus
+              ac facilisis facilisis. Duis a eleifend nulla. Duis blandit ornare
+              eros vel faucibus.
+            </p>
+            <div class="flex flex-row gap-2 items-center p-2">
+              <img
+                src="https://dummyimage.com/70x70"
+                alt=""
+                class="rounded-full"
+              />
+              <div class="flex flex-col">
+                <h3 class="font-semibold">Wesley Wilson</h3>
+                <h4 class="text-xs text-gray-300">CEO WWTECH</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
       </div>
     </div>
     <!-- End Testimonials Area -->
-    <div class="p-4 text-white bd_green bg_dark_half">
-      <h2 class="text-xl xl:text-4xl md:text-3xl font-bold text-center mb-8">
-        Contato
-      </h2>
-      <div
-        class="flex gap-2 justify-start xl:justify-center overflow-x-auto md:overflow-x-visible"
-      >
-        <div
-          class="flex-none rounded-xl drop-shadow-lg w-full xl:w-1/4 md:w-1/3 border"
+    <div class="text-white bd_bottom_green bg_dark_half main_img">
+      <div class="bg_background_main p-4">
+        <h2
+          id="contato"
+          class="text-xl xl:text-4xl md:text-3xl font-bold text-center mb-8"
         >
-          <div class="flex flex-col items-center p-2">
-            <a href="#"
-              ><img
-                src="imgs/contact/instagram.svg"
+          Contato
+        </h2>
+        <div
+          class="flex gap-2 justify-start xl:justify-center overflow-x-auto md:overflow-x-visible"
+        >
+          <div
+            class="flex-none rounded-xl drop-shadow-lg w-full xl:w-1/4 md:w-1/3 border bg-black/40 backdrop-blur-sm"
+          >
+            <div class="flex flex-col items-center p-2">
+              <a href="#"
+                ><img
+                  src="imgs/contact/instagram.svg"
+                  alt=""
+                  class="contact_imgs"
+              /></a>
+              <span class="p-2 text-sm lg:text-3xl font-semibold lg:font-bold"
+                >Instagram</span
+              >
+              <span class="p-2 text-xs md:text-lg lg:text-xl font-semibold"
+                >@horizontecameras</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex-none rounded-xl drop-shadow-lg w-full xl:w-1/4 md:w-1/3 border bg-black/40 backdrop-blur-sm"
+          >
+            <div class="flex flex-col items-center p-2">
+              <img src="imgs/contact/mail.svg" alt="" class="contact_imgs" />
+              <span class="p-2 text-sm lg:text-3xl font-semibold lg:font-bold"
+                >Emails</span
+              >
+              <span
+                class="p-2 text-xs md:text-sm lg:text-xl flex md:flex-col md:justify-center md:text-center"
+              >
+                <span class="mr-2 md:mr-0">Adm </span>
+                administracao@horizontecameras.com</span
+              >
+              <span
+                class="p-2 text-xs md:text-sm lg:text-xl flex md:flex-col md:justify-center md:text-center"
+                ><span class="mr-2 md:mr-0">Tec</span>
+                jefersonsantos@horizontecameras.com</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex-none rounded-xl drop-shadow-lg w-full xl:w-1/4 md:w-1/3 border bg-black/40 backdrop-blur-sm"
+          >
+            <div class="flex flex-col items-center p-2">
+              <img
+                src="imgs/contact/whatsapp.svg"
                 alt=""
                 class="contact_imgs"
-            /></a>
-            <span class="p-2 text-sm lg:text-3xl font-semibold lg:font-bold"
-              >Instagram</span
-            >
-            <span class="p-2 text-xs md:text-lg lg:text-xl font-semibold"
-              >@horizontecameras</span
-            >
-          </div>
-        </div>
-
-        <div
-          class="flex-none rounded-xl drop-shadow-lg w-full xl:w-1/4 md:w-1/3 border"
-        >
-          <div class="flex flex-col items-center p-2">
-            <img src="imgs/contact/mail.svg" alt="" class="contact_imgs" />
-            <span class="p-2 text-sm lg:text-3xl font-semibold lg:font-bold"
-              >Emails</span
-            >
-            <span
-              class="p-2 text-xs md:text-sm lg:text-xl flex md:flex-col md:justify-center md:text-center"
-            >
-              <span class="mr-2 md:mr-0">Adm </span>
-              administracao@horizontecameras.com</span
-            >
-            <span
-              class="p-2 text-xs md:text-sm lg:text-xl flex md:flex-col md:justify-center md:text-center"
-              ><span class="mr-2 md:mr-0">Tec</span>
-              jefersonsantos@horizontecameras.com</span
-            >
-          </div>
-        </div>
-
-        <div
-          class="flex-none rounded-xl drop-shadow-lg w-full xl:w-1/4 md:w-1/3 border"
-        >
-          <div class="flex flex-col items-center p-2">
-            <img src="imgs/contact/whatsapp.svg" alt="" class="contact_imgs" />
-            <span class="p-2 text-sm lg:text-3xl font-semibold lg:font-bold"
-              >Whatsapp</span
-            >
-            <span class="p-2 text-xs md:text-lg">(11) 95235-1949</span>
+              />
+              <span class="p-2 text-sm lg:text-3xl font-semibold lg:font-bold"
+                >Whatsapp</span
+              >
+              <span class="p-2 text-xs md:text-lg">(11) 95235-1949</span>
+            </div>
           </div>
         </div>
       </div>
@@ -457,8 +454,13 @@
         >© Site 2019 - <span id="year"></span> Todos direitos reservados
       </span>
     </div>
+    <!-- End Foot Area-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      &#9650;
+    </button>
     <script>
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

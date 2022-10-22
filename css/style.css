@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Mulish", sans-serif;
 }
@@ -37,7 +41,31 @@ body {
 }
 
 .bd_green {
+  border: 1px solid var(--green_color);
+}
+
+.bd_bottom_green {
   border-bottom: 1px solid var(--green_color);
+}
+
+@keyframes showtext {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.nav_text_show {
+  opacity: 0;
+  transform: translate3d(-50px, 0, 0); /* ADDED - start x position as -50px */
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+}
+.nav_text_show:hover {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 .main_img {
@@ -177,4 +205,135 @@ body {
 
 .ww_animation:hover {
   animation: ww 5s linear infinite;
+}
+
+/* Galeria Carrosel */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container-testimonials {
+  max-width: 70vw;
+  position: relative;
+  margin: auto;
+}
+
+@media (max-width: 420px) {
+  .slideshow-container-testimonials {
+    max-width: 90vw;
+    position: relative;
+    margin: auto;
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--yellow_color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--green_color);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Button top top */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--yellow_color);
+  color: var(--dark_color);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+#myBtn:hover {
+  opacity: 80%;
 }
